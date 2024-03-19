@@ -1,18 +1,14 @@
+
+
 const express = require('express')
+const logger = require('./middleware')
+
 const Joi = require('joi')
 const app = express()
 
 app.use( express.json())
+app.use( express.json())
 
-app.use(function (req, res, next) {
-    console.log("1st")
-
-})
-
-app.use(function (req, res, next) {
-    console.log("1st")
-    next()
-})
 
 
 
